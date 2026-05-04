@@ -118,7 +118,7 @@ export default function App() {
                           whileInView={{ scale: 1 }}
                           whileHover={{ scale: 1.05 }}
                           transition={{ duration: 1.5, ease: "circOut" }}
-                          src="https://images.unsplash.com/photo-1544526226-d4568090ffb8?q=80&w=2070" 
+                          src="https://images.unsplash.com/photo-1559234626-44ceccf8fbc5?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                           alt="Bespoke Experience"
                           className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-[filter] duration-700"
                           referrerPolicy="no-referrer"
