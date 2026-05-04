@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import mojs from '@mojs/core';
 import * as animeModule from 'animejs';
 const anime = (animeModule as any).default || animeModule;
 import { motion } from 'motion/react';
@@ -9,23 +8,6 @@ export default function CTAInteraction() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Mo.js burst effect on click
-    const burst = new (mojs as any).Burst({
-      radius: { 0: 100 },
-      count: 20,
-      children: {
-        shape: 'circle',
-        fill: ['#FF6B35', '#004E64', '#ECA400'],
-        duration: 2000
-      }
-    });
-
-    const handleClick = (e: MouseEvent) => {
-      burst.tune({ x: e.pageX, y: e.pageY }).replay();
-    };
-
-    window.addEventListener('click', handleClick);
-
     // Anime.js text animation
     if (typeof anime === 'function') {
       anime({
@@ -38,8 +20,6 @@ export default function CTAInteraction() {
         easing: 'easeInOutQuad'
       });
     }
-
-    return () => window.removeEventListener('click', handleClick);
   }, []);
 
   return (
