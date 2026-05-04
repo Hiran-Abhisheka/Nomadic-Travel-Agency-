@@ -13,7 +13,7 @@ const destinations = [
     country: 'Europe',
     price: '$1,500',
     rating: 4.9,
-    image: 'https://picsum.photos/seed/greece/600/800',
+    image: 'https://images.unsplash.com/photo-1674312685980-b531a4c9e059?q=80&w=1170&auto=format&fit=crop',
     desc: 'Bask in the iconic white-washed architecture and deep blue domes of Oia, overlooking the majestic volcanic caldera.',
     activities: ['Sunset Cruise', 'Volcanic Hike', 'Wine Tasting'],
     tips: 'Visit in September for perfect weather and fewer crowds.'
@@ -24,7 +24,7 @@ const destinations = [
     country: 'Asia',
     price: '$2,100',
     rating: 4.8,
-    image: 'https://picsum.photos/seed/kyoto/600/800',
+    image: 'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1171&auto=format&fit=crop',
     desc: 'Step back in time to the heart of traditional Japan, filled with zen gardens, bamboo forests, and sacred shrines.',
     activities: ['Tea Ceremony', 'Arashiyama Forest', 'Gion Walking Tour'],
     tips: 'The cherry blossoms in April are legendary, but the autumn leaves in November are equally stunning.'
@@ -35,7 +35,7 @@ const destinations = [
     country: 'Europe',
     price: '$1,850',
     rating: 4.9,
-    image: 'https://picsum.photos/seed/italy/600/800',
+    image: 'https://images.unsplash.com/photo-1515400276915-8aa3a8fd70f4?q=80&w=1154&auto=format&fit=crop',
     desc: 'Winding coastal roads, pebble beaches, and pastel-colored villages perched precariously over the Mediterranean.',
     activities: ['Positano Exploration', 'Boat Tour to Capri', 'Cooking Class'],
     tips: 'Rent a scooter to explore the coast at your own pace.'
@@ -46,7 +46,7 @@ const destinations = [
     country: 'South America',
     price: '$1,200',
     rating: 4.7,
-    image: 'https://picsum.photos/seed/peru/600/800',
+    image: 'https://images.unsplash.com/photo-1723134084358-20a2dc177ff1?q=80&w=1157&auto=format&fit=crop',
     desc: 'The lost city of the Incas, a mystical archaeological wonder hidden high in the Andes mountains.',
     activities: ['Inca Trail Trek', 'Sacred Valley Tour', 'Mountain Photography'],
     tips: 'Acclimatize in Cusco for a few days before heading to the ruins.'
@@ -57,7 +57,7 @@ const destinations = [
     country: 'Oceania',
     price: '$3,500',
     rating: 5.0,
-    image: 'https://picsum.photos/seed/beach/600/800',
+    image: 'https://images.unsplash.com/photo-1738762478614-6b6ef2d09355?q=80&w=1170&auto=format&fit=crop',
     desc: 'The ultimate tropical paradise with overwater bungalows and a vibrant turquoise lagoon full of marine life.',
     activities: ['Snorkeling Safari', 'Jet Ski Tour', 'Overwater Dining'],
     tips: 'The dry season is from May to October.'
@@ -68,7 +68,7 @@ const destinations = [
     country: 'Europe',
     price: '$1,600',
     rating: 4.8,
-    image: 'https://picsum.photos/seed/iceland/600/800',
+    image: 'https://images.unsplash.com/photo-1488415032361-b7e238421f1b?q=80&w=1169&auto=format&fit=crop',
     desc: 'A land of dramatic contrasts, from geothermal lagoons and active volcanoes to massive glaciers and black sand beaches.',
     activities: ['Blue Lagoon Soak', 'Northern Lights Tour', 'Golden Circle Drive'],
     tips: 'Pack layers, as the weather can change in minutes.'
