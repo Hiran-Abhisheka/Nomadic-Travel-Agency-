@@ -65,6 +65,9 @@ export default function TourPackages() {
     } else {
       document.body.style.overflow = 'auto';
     }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
   }, [selectedPkg]);
 
   return (
@@ -128,7 +131,7 @@ export default function TourPackages() {
       {/* Itinerary Modal */}
       <AnimatePresence>
         {selectedPkg && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -144,20 +147,20 @@ export default function TourPackages() {
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               className="relative bg-white w-full max-w-2xl rounded-[32px] overflow-hidden shadow-2xl flex flex-col max-h-[90vh]"
             >
-              <div className="sticky top-0 bg-white z-10 px-8 py-8 border-b border-brand-secondary/5 flex items-center justify-between">
-                <div>
+              <div className="sticky top-0 bg-white z-10 px-6 py-6 sm:px-8 sm:py-8 border-b border-brand-secondary/5 flex items-center justify-between">
+                <div className="pr-4">
                   <span className="text-brand-primary font-bold tracking-widest uppercase text-[9px] mb-1 block">Full Experience</span>
-                  <h3 className="text-3xl font-serif italic text-brand-secondary">{selectedPkg.name}</h3>
+                  <h3 className="text-2xl sm:text-3xl font-serif italic text-brand-secondary leading-tight">{selectedPkg.name}</h3>
                 </div>
                 <button 
                   onClick={() => setSelectedPkg(null)}
-                  className="w-10 h-10 bg-brand-bg rounded-full flex items-center justify-center text-brand-secondary hover:bg-brand-primary hover:text-white transition-all"
+                  className="w-10 h-10 bg-brand-bg rounded-full flex flex-shrink-0 items-center justify-center text-brand-secondary hover:bg-brand-primary hover:text-white transition-all"
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
 
-              <div className="p-8 overflow-y-auto custom-scrollbar">
+              <div className="p-6 sm:p-8 overflow-y-auto overflow-x-hidden custom-scrollbar">
                 <div className="space-y-12">
                   {selectedPkg.itinerary.map((item, idx) => (
                     <div key={item.day} className="relative pl-12 sm:pl-16">
@@ -184,7 +187,7 @@ export default function TourPackages() {
                   ))}
                 </div>
 
-                <div className="mt-16 p-8 bg-brand-bg rounded-[24px]">
+                <div className="mt-16 p-6 sm:p-8 bg-brand-bg rounded-[24px]">
                   <div className="flex items-center gap-3 mb-6">
                     <CheckCircle2 className="w-5 h-5 text-brand-primary" />
                     <h4 className="text-[10px] font-bold uppercase tracking-widest text-brand-secondary">What's Included</h4>
@@ -200,12 +203,12 @@ export default function TourPackages() {
                 </div>
               </div>
 
-              <div className="p-8 border-t border-brand-secondary/5 bg-white sm:flex items-center justify-between gap-8">
-                <div className="mb-4 sm:mb-0">
+              <div className="p-6 sm:p-8 border-t border-brand-secondary/5 bg-white flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div className="mb-2 sm:mb-0 w-full sm:w-auto">
                   <span className="text-[8px] font-bold uppercase tracking-widest text-brand-secondary/20 block mb-1">Estimated Package Price</span>
                   <span className="text-2xl font-serif italic text-brand-secondary">{selectedPkg.price} <span className="text-xs uppercase not-italic font-bold text-brand-secondary/40 tracking-wider">/ Person</span></span>
                 </div>
-                <button className="w-full sm:w-auto px-12 py-4 bg-brand-secondary text-white text-[10px] font-bold uppercase tracking-widest hover:bg-brand-primary transition-all shadow-xl shadow-brand-secondary/20">
+                <button className="w-full sm:w-auto px-10 py-4 bg-brand-secondary text-white text-[10px] font-bold uppercase tracking-widest hover:bg-brand-primary transition-all shadow-xl shadow-brand-secondary/20">
                   Reserve This Journey
                 </button>
               </div>
