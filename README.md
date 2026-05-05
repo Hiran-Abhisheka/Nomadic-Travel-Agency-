@@ -8,7 +8,6 @@
 
 ## ✈️ Features
 
-- **AI-Powered Recommendations:** Get personalized travel suggestions using Google Gemini API  
 - **Destination Browser:** Explore trending and unique destinations with vibrant visuals  
 - **Instant Search:** Quickly find tours, hotels, or experiences  
 - **Responsive Design:** Smooth experience on desktop and mobile  
