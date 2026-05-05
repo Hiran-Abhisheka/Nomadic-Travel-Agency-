@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Nomadic Travel Agency 🧭
 
-# Run and deploy your AI Studio app
+![App Screenshot](https://i.postimg.cc/1tqQQSkz/Screenshot-2026-05-05-105219.png)
 
-This contains everything you need to run your app locally.
+🔗 **Live Demo:** https://nomadic-travel-agency.vercel.app/
 
-View your app in AI Studio: https://ai.studio/apps/53b3ad06-376f-4f84-9e0e-a5e8f2e8c689
+---
 
-## Run Locally
+## ✈️ Features
 
-**Prerequisites:**  Node.js
+- **AI-Powered Recommendations:** Get personalized travel suggestions using Google Gemini API  
+- **Destination Browser:** Explore trending and unique destinations with vibrant visuals  
+- **Instant Search:** Quickly find tours, hotels, or experiences  
+- **Responsive Design:** Smooth experience on desktop and mobile  
+- **Modern Stack:** Fast and optimized performance with latest tools  
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Tech Stack
+
+- **Frontend:** React, TypeScript, Vite  
+- **Styling:** CSS  
+- **AI Integration:** Google Gemini API  
+- **Deployment:** Vercel / Cloud platforms  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Hiran-Abhisheka/Nomadic-Travel-Agency-.git
+cd Nomadic-Travel-Agency-
+```
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Run Development Server
+```bash
+npm run dev
+```
+
+### 4️⃣ Open in Browser
+http://localhost:5173
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+  components/    # Reusable UI components
+  pages/         # Main pages (Home, Destinations, etc.)
+  assets/        # Images & static files
+  main.tsx       # Entry point
+index.html       # Root HTML file
+```
+
+---
+
+## 🧑‍💻 Contributing
+
+Contributions are welcome!  
+Feel free to open issues or submit pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
